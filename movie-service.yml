@@ -1,9 +1,9 @@
 spring:  
   datasource:
     driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:db/games;DB_CLOSE_DELAY=-1
+    url: jdbc:h2:mem:movie;DB_CLOSE_DELAY=-1
     username: sa
-    password: sa
+    password: 
   
   sql:
     init:
