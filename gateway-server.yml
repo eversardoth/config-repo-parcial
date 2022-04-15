@@ -10,6 +10,14 @@ eureka:
 
        
 spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: 876c4d8992196adcf12a
+            client-secret: 13f503e8f51cb075514123706854468f3243a0f8
+
   cloud:
     gateway:
       discovery:
@@ -29,3 +37,8 @@ spring:
           uri: lb://serie-service
           predicates:
             - Path=/series/**
+      default-filters:
+        -TokenRelay=
+
+
+
