@@ -9,13 +9,6 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          github:
-            client-id: 876c4d8992196adcf12a
-            client-secret: 13f503e8f51cb075514123706854468f3243a0f8 
   data:
     mongodb:
       uri: mongodb://localhost:27017/series

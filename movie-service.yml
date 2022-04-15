@@ -1,11 +1,4 @@
 spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          github:
-            client-id: 876c4d8992196adcf12a
-            client-secret: 13f503e8f51cb075514123706854468f3243a0f8  
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/movies?createDatabaseIfNotExist=true
