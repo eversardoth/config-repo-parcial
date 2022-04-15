@@ -38,7 +38,7 @@ spring:
           predicates:
             - Path=/series/**
       default-filters:
-        -TokenRelay=
+        - TokenRelay
 
 
 
