@@ -39,6 +39,3 @@ spring:
             - Path=/series/**
       default-filters:
         - TokenRelay
-
-
-
