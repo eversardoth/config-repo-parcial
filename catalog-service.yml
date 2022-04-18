@@ -9,6 +9,23 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   data:
     mongodb:
-      uri: mongodb://localhost:27017/series
+      uri: mongodb://localhost:27017/catalog
+
+exchange:
+  direct: direct-exchange
+
+queue:
+   movies: movies
+   series: series
+
+routing:
+  direct:
+    movies: movies
+    series: series
