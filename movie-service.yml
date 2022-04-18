@@ -1,4 +1,9 @@
 spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/movies?createDatabaseIfNotExist=true
@@ -29,3 +34,13 @@ eureka:
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
+
+exchange:
+  direct: direct-exchange
+
+queue:
+   movies: movies
+
+routing:
+  direct:
+    movies: movies

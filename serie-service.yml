@@ -12,3 +12,14 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/series
+
+
+exchange:
+  direct: direct-exchange
+
+queue:
+   series: series
+
+routing:
+  direct:
+    series: series
