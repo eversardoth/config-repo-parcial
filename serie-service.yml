@@ -53,7 +53,7 @@ resilience4j:
         failureRateThreshold: 50
         waitDurationInOpenState: 15000
         permittedNumberOfCallsInHalfOpenState: 3
-        automaticTransitionFromOpenToHalfOpenEnabled: enabled
+        automaticTransitionFromOpenToHalfOpenEnabled: true
       postSeries:
         allowHealthIndicatorToFail: false
         registerHealthIndicator: true
@@ -62,7 +62,7 @@ resilience4j:
         failureRateThreshold: 50
         waitDurationInOpenState: 15000
         permittedNumberOfCallsInHalfOpenState: 3
-        automaticTransitionFromOpenToHalfOpenEnabled: enabled
+        automaticTransitionFromOpenToHalfOpenEnabled: true
   
   retry:
     instances: 
