@@ -1,14 +1,16 @@
 spring:
+  zipkin:
+    base-url: http://zipkin-server:9411/
   rabbitmq:
-    host: localhost
+    host: rabbitmq-server
     port: 5672
     username: guest
     password: guest
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/movies?createDatabaseIfNotExist=true
+    url: jdbc:mysql://mysql-server:3306/movies?createDatabaseIfNotExist=true
     username: root
-    password: Opaeverty3586.
+    password: root
   
   sql:
     init:
@@ -26,14 +28,14 @@ spring:
       ddl-auto: create-drop
 
 server:
-    port: 8081
+    port: 8080
 
 eureka:
   client:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-server:8761/eureka
 
 exchange:
   direct: direct-exchange
